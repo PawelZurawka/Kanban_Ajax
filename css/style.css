@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url("../images/kanban-background.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: .5s;
+  cursor: pointer;
+  border: solid 3px indianred;
+}
+
+button:hover {
+  color: #FFF;
+  background-color: indianred;
+}
+
+h1 {
+  color: indianred;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.board {
+  padding: 20px;
+  color: indianred;
+}
+
+.create-column {
+  display: block;
+  margin: 0 auto;
+}
+
+.column-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 30px 0;
+}
+
+.column {
+  background-color: rgba(205, 92, 92, 0.2);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.column-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.column-card-list {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.card {
+  background-color: rgba(205, 92, 92, 0.4);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+  position: relative;
+}
+
+.card > .btn-delete {
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #FFF;
+  position: absolute;
+  top: 1px;
+  right: 3px;
+}
+
+.card > .btn-delete:hover {
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-description {
+  color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */
